@@ -33,7 +33,8 @@ To download the files I used require.js and node.js. Here's the thing:
 
 Also Facebook, if you can see this, please don't sue me.
 
-## Todo: 
+## TODO: 
 - Get rid of Thumbs.db because I'm an idiot and I forgot to `.gitignore`
 - Make .GIF versions of the panelled, animated sprites
+- PNGOUT **ALL** THE FILES!
 - Handle lawsuits
