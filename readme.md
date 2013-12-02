@@ -1,4 +1,7 @@
+#Info
+
 All 1,453 of facebook's free stickers. (I think. Post an issue if you find anything wrong. I don't doubt there are a lot of mistakes in there somewhere).
+
 The script I used to scrape the urls:
 
     var a = [];
@@ -12,8 +15,23 @@ And then I used regex in Sublime to remove the parenthesis, and also played with
 
 The original URLs can be found in `original.json` and the files can be found in `/images` with the animated versions **(coming soon)** and panelled versions.
 
-Also Facebook, if you can see this, please don't sue me.
+To download the files I used require.js and node.js. Here's the thing:
 
+	# in the same directory as original.json
+    npm install require
+    node
+    var list = require('./original.json');
+	var fs = require('fs');
+	var request = require('request');
+
+	for (var c in list) {
+		for (var i in list[c]) {
+			if(!fs.existsSync('images/' + c)) fs.mkdir('images/' + c);
+			request(list[c][i]).pipe(fs.createWriteStream('images/' + c + '/' + i + '.png'))
+		}
+	}
+
+Also Facebook, if you can see this, please don't sue me.
 
 ## Todo: 
 - Get rid of Thumbs.db because I'm an idiot and I forgot to `.gitignore`
