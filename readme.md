@@ -11,3 +11,5 @@ The script I used to scrape the urls:
 And then I used regex in Sublime to remove the parenthesis, and also played with the semantics of sizing (found 960x960 to be the biggest I can request and still get a response) because I was too lazy to do that in code.
 
 The original URLs can be found in `original.json` and the files can be found in `/images` with the animated versions **(coming soon)** and panelled versions.
+
+Also Facebook, if you can see this, please don't sue me.
