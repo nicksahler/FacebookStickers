@@ -13,3 +13,9 @@ And then I used regex in Sublime to remove the parenthesis, and also played with
 The original URLs can be found in `original.json` and the files can be found in `/images` with the animated versions **(coming soon)** and panelled versions.
 
 Also Facebook, if you can see this, please don't sue me.
+
+
+## Todo: 
+- Get rid of Thumbs.db because I'm an idiot and I forgot to `.gitignore`
+- Make .GIF versions of the panelled, animated sprites
+- Handle lawsuits
