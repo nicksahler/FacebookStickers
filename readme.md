@@ -18,7 +18,7 @@ The original URLs can be found in `original.json` and the files can be found in 
 To download the files I used require.js and node.js. Here's the thing:
 
 	# in the same directory as original.json
-    npm install require
+    npm install request
     node
     var list = require('./original.json');
 	var fs = require('fs');
